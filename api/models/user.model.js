@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
 
-const userSchema = mongoose.schema(
+const userSchema = mongoose.Schema(
   {
-    user: {
+    username: {
       type: String,
       unique: true,
       required: true,
     },
-    email: {
+    email: { 
       type: String,
       unique: true,
       required: true,
